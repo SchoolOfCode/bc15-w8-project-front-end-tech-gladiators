@@ -16,7 +16,7 @@ console.log("hello" + id)
       body: JSONdata, // body data type must match "Content-Type" header
     });
     let data = await response.json();
-    console.log(data.data);
+    console.log(data.data.email);
 }
 
 ///////adding styling to user image
