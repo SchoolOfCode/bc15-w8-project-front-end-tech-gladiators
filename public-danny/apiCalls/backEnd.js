@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", populate);
 async function populate() {
   //get data from API
-  let response = await fetch("http://localhost:7000/backend");
+  let response = await fetch("http://localhost:7001/backend");
   let data = await response.json();
   data = data.data;
   //populate html root with data from API
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", getUserId(userid));
 async function getUserId(id){
     let resource = {id: id};
     let JSONdata = JSON.stringify(resource);
-    let response = await fetch("http://localhost:7000/users/user", {
+    let response = await fetch("http://localhost:7001/users/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -81,7 +81,7 @@ form.addEventListener("submit", async (e) => {
   console.log(resource);
   let JSONdata = JSON.stringify(resource);
   //post new resource to the database
-  let response = await fetch("http://localhost:7000/backend", {
+  let response = await fetch("http://localhost:7001/backend", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

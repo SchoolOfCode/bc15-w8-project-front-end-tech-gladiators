@@ -8,7 +8,7 @@ async function populateUserData(id){
 console.log("hello" + id)
     let resource = {id: id};
     let JSONdata = JSON.stringify(resource);
-    let response = await fetch("http://localhost:7000/users/user", {
+    let response = await fetch("http://localhost:7001/users/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
