@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", getUserId(userid));
 async function getUserId(id){
     let resource = {id: id};
     let JSONdata = JSON.stringify(resource);
-    let response = await fetch("http://localhost:7001/users/user", {
+    let response = await fetch("https://olivia-study-buddy.onrender.com/users/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
