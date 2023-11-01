@@ -1,3 +1,5 @@
+const baseUrl = 'http://localhost:7001'
+
 let id = localStorage.getItem('id')
 let localImg = localStorage.getItem('img')
 let userName = ''
@@ -7,7 +9,7 @@ async function populateUserData(id){
     console.log("hello" + id)
         let resource = {id: id};
         let JSONdata = JSON.stringify(resource);
-        let response = await fetch("http://localhost:7001/users/user", {
+        let response = await fetch(`${baseUrl}/users/user`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -16,7 +18,7 @@ async function populateUserData(id){
         });
         let data = await response.json();
     userName = data.data.username
-    
+
     document.getElementById("user-info").innerHTML = `<p id="username">${userName}</p>
     <a href="user-page.html"><div id="profile-pic"></div></a>`
 }

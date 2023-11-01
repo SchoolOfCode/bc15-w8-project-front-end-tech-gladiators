@@ -1,4 +1,5 @@
 
+const baseUrl = 'http://localhost:7001'
 //////////getting user information from the back end using user ID
 let userid = localStorage.getItem('id')
 
@@ -8,7 +9,7 @@ async function populateUserData(id){
 console.log("hello" + id)
     let resource = {id: id};
     let JSONdata = JSON.stringify(resource);
-    let response = await fetch("http://localhost:7001/users/user", {
+    let response = await fetch(`${baseUrl}/users/user`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -91,7 +92,7 @@ async function addStarsUi(){
   async function updateRatings(route, rating){
   let ratingUpdate = {id: userid, rating: rating};
   let JSONdata = JSON.stringify(ratingUpdate)
-  await fetch(`http://localhost:7001/users/${route}`, {
+  await fetch(`${baseUrl}/users/${route}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",

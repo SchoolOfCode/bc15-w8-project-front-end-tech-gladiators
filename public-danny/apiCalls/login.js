@@ -1,3 +1,4 @@
+const baseUrl = 'http://localhost:7001'
 //login attempt
 //export const userName = ''
 const loginForm = document.getElementById("logInData");
@@ -10,7 +11,7 @@ loginForm.addEventListener("submit", async (e) => {
   let JSONdata = JSON.stringify(resource);
   //console.log(resource)
   //post new resource to the database
-  let response = await fetch("http://localhost:7001/users/login", {
+  let response = await fetch(`${baseUrl}/users/login`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -66,7 +67,7 @@ registerForm.addEventListener("submit", async (e) => {
   console.log(resource);
   let JSONdata = JSON.stringify(resource);
 
-  let response = await fetch("http://localhost:7001/users/newuser", {
+  let response = await fetch(`${baseUrl}/users/newuser`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
