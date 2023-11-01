@@ -181,7 +181,7 @@ a {
     width: 50px;
     border-radius: 50%;
     transition-duration: 1s;
-    background-image: url('/assets/images/Plus.png');
+    background-image: url('./assets/images/Plus.png');
     background-size: contain;
     cursor: pointer;
 }
