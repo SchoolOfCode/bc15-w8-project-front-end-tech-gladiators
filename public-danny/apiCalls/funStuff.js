@@ -1,5 +1,5 @@
 //API call to get conent to populate front end page
-const baseUrl = 'http://localhost:7001'
+const baseUrl = 'https://olivia-study-buddy.onrender.com'
 
 document.addEventListener("DOMContentLoaded", populate);
 async function populate() {

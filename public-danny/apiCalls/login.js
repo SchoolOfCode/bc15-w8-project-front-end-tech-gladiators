@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:7001'
+const baseUrl = 'https://olivia-study-buddy.onrender.com'
 //login attempt
 //export const userName = ''
 const loginForm = document.getElementById("logInData");

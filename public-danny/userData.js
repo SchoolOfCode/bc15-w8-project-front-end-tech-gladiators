@@ -1,4 +1,4 @@
-//const baseUrl = 'http://localhost:7001'
+//const baseUrl = 'https://olivia-study-buddy.onrender.com'
 
 let id = localStorage.getItem('id')
 let localImg = localStorage.getItem('img')
