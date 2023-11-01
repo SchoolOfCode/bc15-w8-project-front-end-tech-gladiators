@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:7001'
+//const baseUrl = 'http://localhost:7001'
 
 let id = localStorage.getItem('id')
 let localImg = localStorage.getItem('img')
