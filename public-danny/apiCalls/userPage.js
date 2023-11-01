@@ -1,5 +1,5 @@
 
-const baseUrl = 'https://olivia-study-buddy.onrender.com'
+//const baseUrl = 'https://olivia-study-buddy.onrender.com'
 //////////getting user information from the back end using user ID
 let userid = localStorage.getItem('id')
 
