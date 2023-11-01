@@ -1,4 +1,4 @@
-const baseUrl = 'http://https://olivia-study-buddy.onrender.com'
+const baseUrl = 'https://olivia-study-buddy.onrender.com'
 //API call to get conent to populate front end page
 document.addEventListener("DOMContentLoaded", populate);
 async function populate() {
