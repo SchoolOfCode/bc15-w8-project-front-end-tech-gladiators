@@ -69,7 +69,7 @@ async function getUserId(id){
 //default behaviour for submit is to refresh page - so resources automatically update.
 form.addEventListener("submit", async (e) => {
   //get values from Form data and save in js object
-
+e.preventDefault()
   let resource = {
     title: e.target[0].value,
     description: e.target[3].value,
@@ -78,7 +78,6 @@ form.addEventListener("submit", async (e) => {
     category: userNameAdd,
   };
   //turn into JSON object
-  console.log(resource);
   let JSONdata = JSON.stringify(resource);
   //post new resource to the database
   let response = await fetch("http://localhost:7001/backend", {

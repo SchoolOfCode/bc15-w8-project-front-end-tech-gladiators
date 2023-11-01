@@ -350,6 +350,56 @@ form input {
 }
 
 
+#front-end-rating {
+    color: #FCC699;
+}
+
+#setFrontEnd{
+    accent-color: #FCC699;
+}
+
+#back-end-rating {
+    color: #50A2FF;
+}
+
+#setBackEnd{
+    accent-color: #50A2FF;
+}
+
+
+#uiux-rating {
+    color: #C89AFF;
+}
+
+#setUxUi{
+    accent-color: #C89AFF;
+}
+.star-container {
+    font-size: 24px;
+}
+
+.empty-star {
+    font-size: 24px;
+    color: #636770;
+}
+
+#profile-pic {
+    
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+
 /*********Colour classes**********/
 
 .yellow{
@@ -472,37 +522,11 @@ visibility: hidden;
    align-self: center;
 }
 
-#front-end-rating {
-    color: #FCC699;
-}
 
-#back-end-rating {
-    color: #50A2FF;
-}
 
-#uiux-rating {
-    color: #C89AFF;
-}
 
-.star-container {
-    font-size: 24px;
-}
+/******************************************/
 
-.empty-star {
-    font-size: 24px;
-    color: #636770;
-}
-
-#profile-pic {
-    
-    background-size: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-footer {
-    margin-bottom: 1rem;
-    text-align: center;
-    text-decoration: underline;
+.starOn{
+    color: yellow;
 }

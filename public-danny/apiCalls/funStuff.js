@@ -9,9 +9,9 @@ async function populate() {
   //reverses at the end to show the most recent link first
   document.getElementById("root").innerHTML = data
     .map((resource) => {
-      console.log(resource.imglink);
       let colour = addColour(resource.id);
-      return ` <li>
+      return `
+      <li>
         <a href="${resource.link}" target="_blank">
             <div class="${colour} btn">
                 <div class="btn-text-container">
@@ -24,7 +24,7 @@ async function populate() {
                 </div>
             </div>
         </a>
-    </li>`;
+      </li>`;
     })
     .reverse()
     .join("");
@@ -63,9 +63,8 @@ async function getUserId(id){
     });
     let data = await response.json();
     userNameAdd = data.data.username
+    return
 }
-
-
 
 //API call to submit a new resource
 //function to submit new resources
@@ -77,10 +76,9 @@ form.addEventListener("submit", async (e) => {
     description: e.target[3].value,
     link: e.target[1].value,
     imglink: e.target[2].value,
-    category: userNameAdd,
+    category: userNameAdd
   };
   //turn into JSON object
-  console.log(resource);
   let JSONdata = JSON.stringify(resource);
   //post new resource to the database
   let response = await fetch("http://localhost:7001/funstuff", {
