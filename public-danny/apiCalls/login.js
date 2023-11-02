@@ -54,7 +54,7 @@ function register() {
 //API request to add new user
 
 registerForm.addEventListener("submit", async (e) => {
-  //e.preventDefault()
+  e.preventDefault()
   let resource = {
     name: e.target[0].value,
     email: e.target[1].value,
