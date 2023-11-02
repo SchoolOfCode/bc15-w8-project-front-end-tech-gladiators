@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;600&family=Unica+One&display=swap" rel="stylesheet">
+    <title>Study Buddy App</title>
+    <style id="userImage">
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img id="logo" src="../assets/images/study-buddy-logo-2.png" alt="study buddy logo"></a>
+        <div id="user-info">
+            <p id="username" class="user-handle">dannykryan</p>
+            <div id="profile-pic"></div>
+        </div>
+    </nav>
+    <main>
+        <div id="profile-info-container">
+            <div id="profile-pic-large">
+                <div id="user-basic-info">
+                    <!-- <div id="username-header-container"> -->
+                        <h1 id="user-fullname">Danny Ryan</h1>
+                    <!-- </div> -->
+                    <p class="user-handle">dannykryan</p>
+                    <a id="user-email" href="mailto:dannykryan@gmail.com">dannykryan@gmail.com</a>
+            </div>
+            </div>
+            <div id="user-infobox">
+                <h2 id="user-infobox-header">User Stats:</h2>
+                <div class="rating-container">Front-End: <div class="star-container" id="front-end-rating">★★★★</div><div class="empty-star">★</div></div>
+                <div class="rating-container">Back-End: <div class="star-container" id="back-end-rating">★★★</div><div class="empty-star">★★</div></div>
+                <div class="rating-container">UI &amp; UX: <div class="star-container" id="uiux-rating">★★★★</div><div class="empty-star">★</div></div>
+                <a href="https://github.com/dannykryan"><img id="github-icon" src="../assets/images/icons/github-icon-white.png" alt="Github icon"></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a id="log-out-btn" onclick="logOut(); window.location.href='login.html';">Log Out</a>
+    </footer>
+    <script src="userData.js"></script>
+    <script src="./apiCalls/userPage.js"></script>
+</body>
+</html>

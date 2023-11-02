@@ -1,0 +1,513 @@
+body {
+    margin: 0;
+    background-color: #1B1E24;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+nav {
+    background-color: #121418;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+}
+
+#logo {
+    height: 60px;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#profile-pic {
+    border-radius: 100%;
+    background-color: #00C39A;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.8rem;
+}
+
+main {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.1rem;
+    box-sizing: border-box;
+}
+
+#welcome-box {
+    padding: 0  4rem 0 1.1rem;
+    margin-bottom: 1.8rem;
+}
+
+#welcome-box h1 {
+    font-size:  1.2rem;
+}
+
+#welcome-box p {
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-text-container p {
+    margin-bottom: 0%;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    min-width: 100px;
+}
+
+.img-box img {
+    max-height: 100px;
+    max-width: 120px;
+}
+
+.btn {
+    display: flex;
+    height: 100%;
+    padding: 1.1rem 1.1rem 1.1rem 1.1rem;
+    border-radius: 1.25rem;
+    margin: 0 0 2rem 0;
+}
+
+.btn-header {
+    color: black;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+    max-width: 300px;
+}
+
+.btn-description {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.resource-btn {
+    background-color: white;
+}
+
+.open-bar-btn {
+    background-color: #00C39A;
+}
+
+.front-end-btn {
+    background-color: #C89AFF;
+}
+
+.back-end-btn {
+    background-color: #50A2FF;
+}
+
+.ui-ux-btn {
+    background-color: #FCC699;
+}
+
+#resource-box {
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+#resource-box h1 {
+    font-size: 2rem;
+}
+
+#resource-box p {
+    font-weight: 200;
+}
+
+.owner-text {
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.resource-header-image {
+    height: 150px;
+}
+
+.back-link-box {
+    margin-right: auto;
+    text-align: left;
+}
+
+.back-link-box a {
+    color: white;
+}
+
+/* File button and pop up */
+
+.submit-resource-button {
+    position: fixed;
+    top:90%;
+    left: 80%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition-duration: 1s;
+    background-image: url('/assets/images/Plus.png');
+    background-size: contain;
+    cursor: pointer;
+}
+
+.inactive-link {
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.rotate-and-hide {
+    transform: rotate(90deg);
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+}
+
+form{
+    visibility: hidden;
+    position:fixed;
+    top: 10rem;
+    left:10%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 70%;
+    margin: auto;
+    background-color:  #343842;
+    padding: 15px;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    gap: 5px;
+}
+
+#newRes {
+    border-radius: 13px;
+}
+
+#newRes h2 {
+    text-align: center;
+}
+
+.formShow{
+    visibility: visible;
+}
+
+#main{
+    transition: opacity 1s;
+}
+
+.fade{
+    opacity: 20%;
+}
+
+form textarea, form input, form button {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    border-radius: 13px;
+    padding: 0.8rem;
+    border: 0px;
+    background-color: #1B1E24;
+    margin-bottom: 0.6rem;
+    color: white;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 50px;
+}
+
+form input {
+    height: 20px;
+}
+
+#form-cancel-button {
+    margin-top: 1.1rem;
+    background-color: #666371;
+}
+
+#form-cancel-button:hover {
+    background-color: #4d4b55;
+}
+
+#form-submit-button {
+    background-color: #8F77D8;
+}
+
+#form-submit-button:hover {
+    background-color: #625291;
+}
+
+
+/* PROFILE PAGE */
+
+#profile-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-basic-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(52, 56, 66, 0.7);
+    border-radius: 0 0 18px 18px;
+    padding: 1.1rem 1.1rem 1.1rem 1.1rem;
+}
+
+#user-basic-info h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+#user-basic-info a {
+    color: #00C39A;
+}
+
+#user-basic-info p {
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    font-weight: 300;
+}
+
+#profile-pic-large {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width:  350px;
+    border-radius: 20px;
+}
+
+#user-infobox-header {
+    font-size: 20px;
+    margin-top: 1.4rem;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+#user-infobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+}
+
+.star-container {
+    margin-left: 1.1rem;
+}
+
+#username-header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#github-icon {
+    height: 30px;
+    margin-top: 1.1rem;
+}
+
+
+/*********Colour classes**********/
+
+.yellow{
+    background-color: #FCC699;
+}
+
+.blue{
+    background-color: #50A2FF;
+}
+
+.green{
+    background-color: #00C39A;
+}
+
+.purple{
+    background-color: #C89AFF;
+}
+
+/***********Log in ************/
+
+#login{
+    background-image: url();
+    background-size: contain;
+}
+
+#login main{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#logInData{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+#login input{
+    width: 100%;
+    background-color: white;
+}
+
+#login button{
+    background-color: #bf9aff;
+    width: 125px;
+    color: white;
+    font-weight: 200px;
+    border-radius: 20px;
+    height: 28px;
+}
+
+
+.logInbtn{
+    margin-top: 5px;
+}
+
+.continue{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #bf9aff;
+    border-radius: 20px;
+    top: 40%;
+    left: 22%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+}
+
+.notFound{
+    visibility: hidden;
+}
+
+.register{
+    margin-top: 20px;
+    border: 0;
+}
+
+#newUser{
+
+    padding: 20px;
+    border-radius: 20px;
+    height: 40%;
+    width: 70%;
+    position: fixed;
+    top: 20%;
+    left: 15%;
+    background-color: #262627;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.newUserHide{
+visibility: hidden;
+}
+
+.loginOpacity{
+    opacity: 20%;
+}
+
+#newUser input{
+    width: 95%;
+}
+
+#newUser button{
+    background-color: #bf9aff;
+    width: 125px;
+    color: white;
+    font-weight: 200px;
+    border-radius: 20px;
+    height: 28px;
+   align-self: center;
+}
+
+#front-end-rating {
+    color: #FCC699;
+}
+
+#back-end-rating {
+    color: #50A2FF;
+}
+
+#uiux-rating {
+    color: #C89AFF;
+}
+
+.star-container {
+    font-size: 24px;
+}
+
+.empty-star {
+    font-size: 24px;
+    color: #636770;
+}
+
+#profile-pic {
+    
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer:hover {
+    cursor: pointer;
+}

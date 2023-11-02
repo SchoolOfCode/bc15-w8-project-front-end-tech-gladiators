@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;600&family=Unica+One&display=swap" rel="stylesheet">
+    <title>Study Buddy App</title>
+    <style id="userImage">
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><img id="logo" src="../assets/images/study-buddy-logo-2.png" alt="study buddy logo"></a>
+        <div id="user-info">
+        </div>
+    </nav>
+    <main>
+        <div id="resource-box">
+            <div class="back-link-box">
+                <a href="index.html">❮ Back</a>
+            </div>
+            <img class="resource-header-image" src="../assets/images/Hand.png" alt="illustration of a man with big ideas">
+            <h1 class="resource-header">RESOURCE LIBRARY</h1>
+            <p>Our Resource Library relies on our users, like you! So please share all of your favourite links for everyone to enjoy.</p>
+        </div>
+            <ul>
+                <li>
+                    <a href="fun-stuff.html">
+                        <div class="open-bar-btn btn">
+                            <div class="btn-text-container">
+                                <div class="btn-header">FUN STUFF</div>
+                                <div class="btn-description">Chat about anything. There's no rules in the Open Bar!</div>
+                            </div>
+                            <div class="img-box">
+                                <img src="../assets/images/Music.png" alt="lady listening to music illustration">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="back-end.html">
+                        <div class="back-end-btn btn">
+                            <div class="btn-text-container">
+                                <div class="btn-header">BACK-END</div>
+                                <div class="btn-description">JS, Databases, APIs and everything in between.</div>
+                            </div>
+                            <div class="img-box">
+                                <img src="../assets/images/Graph.png" alt="illustration of a graph">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="front-end.html">
+                        <div class="front-end-btn btn">
+                            <div class="btn-text-container">
+                                <div class="btn-header">FRONT-END</div>
+                                <div class="btn-description">From CSS and HTML all the way to Frameworks, we've got you covered.</div>
+                            </div>
+                            <div class="img-box">
+                                <img src="../assets/images/Front_end.png" alt="illustration of a phone">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="ui-ux.html">
+                        <div class="ui-ux-btn btn">
+                            <div class="btn-text-container">
+                                <div class="btn-header">UI / UX &amp; DESIGN</div>
+                                <div class="btn-description">Delve deep into the design experience with those in the know!</div>
+                            </div>
+                            <div class="img-box">
+                                <img src="../assets/images/Pencil.png" alt="illustration of a pencil">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+    </main>
+    <footer>
+        <a id="log-out-btn" onclick="logOut(); window.location.href='login.html';">Log Out</a>
+    </footer>
+    <script src="userData.js"></script>
+</body>
+</html>

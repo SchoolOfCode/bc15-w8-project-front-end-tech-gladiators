@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;600&family=Unica+One&display=swap" rel="stylesheet">
+    <title>Study Buddy App</title>
+</head>
+<body id="login">
+
+    <main class="loginMain">
+        <div>
+            <img src="/assets//images/Logo.png" width="300px" alt="study buddy illustration">
+        </div>
+        <form id="logInData" autocomplete="off">
+            <label for="userName">Username:</label>
+            <input id="userName" aria-label="Username" type="text" placeholder="Enter username">
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="Enter password">
+            <button type="submit" class="logInbtn">Login</button>
+            <button type="button" class="register" onclick="register()">Register</button>
+        </form>
+    </main>
+    <form id="newUser" class="newUserHide" autocomplete="off">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName">
+        <label for="email">Email</label>
+        <input type="text" id="email">
+        <label for="userNameIn">User Name</label>
+        <input type="text" id="userNameIn">
+        <label for="passwordIn">Password</label>
+        <input type="password" id="passwordIn">
+        <label for="imgLink">Profile image link </label>
+        <input type="text" id="imgLink">
+        <button type="submit" class="newUser">Submit</button>
+        <button type="button" onclick="register()">Cancel</button>
+    </form>
+    <!-- Needed for login -->
+    <div class="popUp">
+    </div>
+    <div id="notFound" class="notFound continue">
+        <h2>User not found</h2>
+        <button type="button" class="close">close</button>
+    </div>
+    <footer></footer>
+    <script src="./apiCalls/login.js"></script>
+</body>
+</html>
