@@ -74,4 +74,7 @@ registerForm.addEventListener("submit", async (e) => {
     body: JSONdata, // body data type must match "Content-Type" header
   });
 
+  let data = await response.json()
+
+    console.log(data)
 });
